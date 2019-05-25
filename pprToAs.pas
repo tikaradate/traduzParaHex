@@ -6,7 +6,7 @@ const
 var
 	res : char;
 	temFuncao : boolean;
-	i, linhas : integer;
+	i, linhas, linhaFun : integer;
 	tfOut : textfile;
 
 procedure separaInstrucao(instru : string;
