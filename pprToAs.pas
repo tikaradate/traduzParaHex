@@ -136,15 +136,15 @@ begin
 	begin
 		writeln('Comeca em qual linha?');
 		readln(linhaFun);
-		writeln('Quantas linhas tem?')
-		readln(linhas)
+		writeln('Quantas linhas tem?');
+		readln(linhas);
 		for i := linhaFun to linhas+linhaFun do
 		begin
 			writeln('Linha atual: ', i);
 			escreveHex(i);
 		end;
 		writeln('Tem outra funcao?(S/N)');
-		readln(res)
+		readln(res);
 		temFuncao := (res = 's') or (res = 'S');
 	end;
 	closeFile(tfOut);
