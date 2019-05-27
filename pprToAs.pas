@@ -124,7 +124,7 @@ begin
 	writeln('Escreva os comandos no (quase) formato do papel, em base 10:');
 	writeln('Se nao houver o registrador, coloque 0');
 	writeln('funcao c a b cte');
-	for i := 0 to linhas do
+	for i := 0 to linhas-1 do
 	begin
 		writeln('Linha atual: ', i);
 		escreveHex(i);
@@ -136,7 +136,7 @@ begin
 	begin
 		writeln('Quantas linhas tem?');
 		readln(linhas);
-		for i := i to linhas+i do
+		for i := i+1 to linhas+i do
 		begin
 			writeln('Linha atual: ', i);
 			escreveHex(i);
