@@ -6,7 +6,7 @@ const
 var
 	res : char;
 	temFuncao : boolean;
-	i, linhas, linhaFun : integer;
+	i, linhas : integer;
 	tfOut : textfile;
 
 procedure separaInstrucao(instru : string;
@@ -134,11 +134,9 @@ begin
 	temFuncao := (res = 's') or (res = 'S');
 	while temFuncao do
 	begin
-		writeln('Comeca em qual linha?');
-		readln(linhaFun);
 		writeln('Quantas linhas tem?');
 		readln(linhas);
-		for i := linhaFun to linhas+linhaFun do
+		for i := i to linhas+i do
 		begin
 			writeln('Linha atual: ', i);
 			escreveHex(i);
